@@ -1,0 +1,174 @@
+/*头部搜索*/
+
+#head_search{
+	width: 100%;
+	height: 0.94rem;
+	background: aliceblue;
+}
+.search-bar-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding: 16px 24px;
+	
+}
+#j_seach{
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	border: 1px solid #FFECEC;
+	border-radius: 15px;
+	outline: none;
+	font-size: 32px;
+}
+
+
+/*导航栏*/
+#nav_scroll{
+	width: 100%;
+	height: 0.84rem;
+	background: aliceblue;
+}
+.nav_box{
+	padding-left: 10px;
+	width: 92%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	overflow-x: scroll;
+}
+
+.nav_box::-webkit-scrollbar {
+	display:none;
+}
+
+.nav_list{
+	width: 13.5rem;
+	height: 100%;
+	display: flex;
+	position: absolute;
+}
+.nav_list li{
+	padding: 22px;
+	font-size: 30px;
+	color: #666;
+}
+.active_nav{
+	border-bottom: 2px solid red;
+}
+
+
+/*图片导航*/
+
+#nav_pic{
+	width: 100%;
+	height: 1.56rem;
+	background: cadetblue;
+	margin-bottom: 20px;
+}
+#nav_pic >ul {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+#nav_pic >ul>li {
+	width: 25%;
+	height: 100%;
+}
+#nav_pic >ul>li img{
+	width: 1.2rem;
+	height: 0.8rem;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+/*详细列表*/
+.group-title{
+	margin: 0 .24rem;
+	font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    color: #333;
+    line-height: 19px;
+}
+.seller-labels{
+	margin-top: .26rem;
+	font-size: 24px;
+	display: inline-block;
+    padding: 0 .17rem;
+    color: #3d3d3d;
+    line-height: .40rem;
+    height: .40rem;
+    text-align: center;
+    border-radius: .40rem;
+    background: #eeeff0;
+}
+.title {
+    margin-bottom: 2px;
+    color: #333;
+    font-size: 30px;
+    text-align: left;
+    height: .32rem;
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.group-banner{
+	height: 1.2rem;
+	padding: .24rem;
+    overflow: hidden;
+}
+.group-price-inner {
+    float: left;
+    height: .6rem;
+    line-height: .6rem;
+    vertical-align: baseline;
+}
+.price-dec{
+	font-size: 26px;
+	font-weight: 700;
+	color: #ff4965;
+}
+.price-int{
+	font-size: 36px;
+	font-weight: 700;
+	color: #ff4965;
+}
+.price-ori{
+	color: #999;
+    padding-left: .125rem;
+	text-decoration: line-through;
+}
+
+.list-group-btns{
+	float: right;
+}
+.list-group-btn{
+	display: inline-block;
+	padding-right: .24rem;
+	height: .6rem;
+	width: 1.94rem;
+	background: #ff4965;
+	color: #fff;
+	font-size: 28px;
+	text-align: right;
+	line-height: .6rem;
+	border-radius: .3rem;
+	position: relative;top:-.6rem;left: 0;
+	z-index: -5;
+}
+.list-group-btns img{
+	
+	width: .6rem;
+	height: .6rem;
+	border: 3px solid #fff;	
+	border-radius: 50%;
+	
+}

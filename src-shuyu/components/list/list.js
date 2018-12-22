@@ -28,17 +28,21 @@ class List extends Component{
 	}
 	componentDidMount(){
 		this.props.getHomeData();
+		this.props.getiddata()
 	}
 }
 
 const mapStateToProps=(state)=>({
 	picList:state.ListPic.picList,
 	newList:state.ListPic.newList
+	
 })
 
 const mapDispatchToProps=(dispatch)=>({
 	getHomeData(){
 		dispatch(pic_avtion());
+	},
+	getiddata(){
 		dispatch(news_avtion());
 	}
 })

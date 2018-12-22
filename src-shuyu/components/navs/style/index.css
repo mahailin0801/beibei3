@@ -1,0 +1,72 @@
+.ff-search{
+	width: 100%;
+	position: fixed;
+	bottom: .9rem;
+	top: 0;
+	overflow-y: auto;
+}
+/*搜索框*/
+
+#f-search{
+	width: 100%;
+	height: 1.42rem;
+	background: #F7F7F7;
+}
+.search{
+	width: 100%;
+	height: 1.42rem;
+	display: flex;
+	padding: 24px;
+}
+.search-input{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+#J_input{
+	width: 100%;
+	height: 100%;
+	border:1px solid #E7E1CD;
+	border-radius: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+/*详细列表*/
+#allStyle{
+	width: 100%;
+}
+.leix{
+	width: 100%;
+	height: 0.65rem;
+	line-height: 0.65rem;
+	padding-left: 15px;
+	background: #F7F7F7;
+	font-size: 32px;
+	float: left;
+}
+.lei_fir{
+	width: 100%;
+	height: 6.3rem;
+}
+.lei_fir .lei_str{
+	width:25%;
+	float: left;
+	text-align: center;
+	height: 33.333%;
+	background: white;
+	
+}
+.lei_fir .lei_str .pic_su img{
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-left: 33.75px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.lei_fir .lei_str .name_title{
+	font-size: 30px;
+}
+
+
+

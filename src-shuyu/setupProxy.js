@@ -14,12 +14,12 @@ module.exports  = (app)=>{
         changeOrigin:true
     }))
     
-    app.use("/item",proxy({
+    /*app.use("/item",proxy({
         target:"https://dsapi.beibei.com",
         changeOrigin:true
-    }))
+    }))*/
    
-   /*app.use("/Movie",proxy({
+   app.use("/Movie",proxy({
         target:"https://api-m.mtime.cn",
         changeOrigin:true
     }))
@@ -27,7 +27,7 @@ module.exports  = (app)=>{
    app.use("/PageSubArea",proxy({
         target:"https://api-m.mtime.cn",
         changeOrigin:true
-    }))*/
+    }))
 }
 //https://api-m.mtime.cn/PageSubArea/HotPlayMovies.api?locationId=290
 //https://api-m.mtime.cn/Movie/MovieCreditsWithTypes.api?movieId=217896

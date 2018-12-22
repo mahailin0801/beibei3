@@ -51,7 +51,7 @@ export const nav_avtion =()=>({
 export const pic_avtion =()=>({
     type:"PIC_NAV",
     payload:new Promise(resolve=>{
-        let url = "/ads/h5.html?ad_id=14&app=beibei&user_tag=2147483646&id=&client_info=%7B%22platform%22%3A%22ios%22%7D";
+        let url = "/Movie/MovieCreditsWithTypes.api?movieId=217896";
         fetch(url)
         .then(res=>res.json())
         .then((data)=>{

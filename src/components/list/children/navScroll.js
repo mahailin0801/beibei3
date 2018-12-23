@@ -8,7 +8,7 @@ class NavScroll extends Component{
 				<div className="nav_box">
 					<ul className="nav_list">
 						<li className="active_nav">上新</li>
-						<li>上新</li>
+						<li>美丽</li>
 						<li>孕婴</li>
 						<li>童装</li>
 						<li>女装</li>

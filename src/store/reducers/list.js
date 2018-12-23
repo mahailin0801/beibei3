@@ -1,7 +1,8 @@
 
 const defaultState = {
     picList:[],
-    newList:[]
+    newList:[],
+    page:2
 }
 
 export default (state=defaultState,action)=>{
@@ -14,8 +15,16 @@ export default (state=defaultState,action)=>{
 	        
 	    case "NEW_LIST_FULFILLED":
 	        let gitNewData = JSON.parse(JSON.stringify(state));
-	        gitNewData.newList = action.payload;
+	        gitNewData.newList = action.payload.data.goods;
 	        return gitNewData;
+	    
+
+	    case "GOODS_LIST_MORE_FULFILLED":
+            let goodsMore = JSON.parse(JSON.stringify(state));
+            goodsMore.newList = [...goodsMore.newList, ...action.payload.data.goods];
+            goodsMore.page += 1;
+            return goodsMore;
     }
     return state;
 }
+

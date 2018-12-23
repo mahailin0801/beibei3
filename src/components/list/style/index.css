@@ -1,12 +1,4 @@
 /*头部搜索*/
-.ff-list{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow-y: auto;
-}
 #head_search{
 	width: 100%;
 	height: 0.94rem;
@@ -42,7 +34,6 @@
 	height: 100%;
 	position: relative;
 	overflow: hidden;
-	overflow-x: scroll;
 }
 
 .nav_box::-webkit-scrollbar {
@@ -178,4 +169,19 @@
 	border: 3px solid #fff;	
 	border-radius: 50%;
 	
+}
+
+
+/*滚动*/
+#root,#root>div{
+	height: 100%;
+}
+
+.wrapper{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.wrapper>.content{
+	padding-bottom: 1rem;
 }

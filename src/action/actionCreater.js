@@ -70,7 +70,7 @@ export const pic_avtion =()=>({
 export const news_avtion =()=>({
     type:"NEW_LIST",
     payload:new Promise(resolve=>{
-        let url = "/PageSubArea/HotPlayMovies.api?locationId=290";
+        let url = "/api/getGoods?page=1&zy_ids=p8_c4_l4_0&app_name=zhe&catname=tab_hpzc&flag=tab_hpzc";
         fetch(url)
         .then(res=>res.json())
         .then((data)=>{
@@ -80,3 +80,39 @@ export const news_avtion =()=>({
     })
 })
 
+
+
+//https://webservice.juanpi.com/api/getGoods?page=1&zy_ids=p8_c4_l4_0&app_name=zhe&catname=tab_hpzc&flag=tab_hpzc
+//https://webservice.juanpi.com/api/getGoods?page=2&zy_ids=p8_c4_l4_0&app_name=zhe&catname=tab_hpzc&flag=tab_hpzc
+	        
+
+export const goods_avtion = (page)=>({
+    type:"GOODS_LIST_MORE",
+    payload:new Promise(resolve=>{
+        if(page !="undefined"){
+            let url = "/api/getGoods?page="+page+"&zy_ids=p8_c4_l4_0&app_name=zhe&catname=tab_hpzc&flag=tab_hpzc";
+            fetch(url)
+            .then(res=>res.json())
+            .then((data)=>{
+            	//console.log(data)
+                resolve(data)
+            })
+        }
+    })
+})
+
+
+//https://mce.mogucdn.com/jsonp/multiget/3?appPlat=m&pids=122224&callback=jsonp122224&_=1545556699866
+//http://m.mtime.cn/Service/callback.mi/PageSubArea/GetFirstPageAdvAndNews.api?t=2018122319254845266
+export const banner_avtion =()=>({
+    type:"BANNER_LIST",
+    payload:new Promise(resolve=>{
+        let url = "/Service/callback.mi/PageSubArea/GetFirstPageAdvAndNews.api?t=2018122319254845266";
+        fetch(url)
+        .then(res=>res.json())
+        .then((data)=>{
+        	//console.log(data.topPosters)
+            resolve(data)
+        })
+    })
+})

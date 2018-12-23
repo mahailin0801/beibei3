@@ -1,0 +1,36 @@
+#pic{
+    margin:0.87rem auto 0;
+}
+#unlogin{
+    height: .88rem;
+    padding: 24px 0;
+    font-size: 29px;
+    text-align: center;
+}
+#cart-btn {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #f7afbc;
+    border-radius: .09rem;
+    padding: 23px 34px;
+    background-color: #fff;
+    color: #ff4965;
+    font-size: 29px;
+    line-height: 29px;
+}
+#middle{
+    margin: 40px auto 0;
+    text-align: center;
+    height: .94rem;
+    line-height: .94rem;
+}
+#middle img{
+    display: inline;
+    height: .3rem;
+    width: .3rem;
+}
+#middle span{
+    font-size: .32rem;
+    height: .32rem;
+    line-height: .32rem;
+}

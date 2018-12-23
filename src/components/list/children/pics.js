@@ -5,7 +5,7 @@ class NavPic extends Component{
 	render(){
 		let {picList} = this.props;
 		const listpect = picList.h5_pintuan_icon_shortcuts
-		console.log(picList)
+		//console.log(picList)
 		return(
 			<div id="nav_pic">
 				<ul>

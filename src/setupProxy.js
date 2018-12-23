@@ -18,17 +18,21 @@ module.exports  = (app)=>{
         target:"https://dsapi.beibei.com",
         changeOrigin:true
     }))
-   
-   /*app.use("/Movie",proxy({
-        target:"https://api-m.mtime.cn",
+    
+   app.use("/api",proxy({
+        target:"https://webservice.juanpi.com",
         changeOrigin:true
     }))
-   
-   app.use("/PageSubArea",proxy({
-        target:"https://api-m.mtime.cn",
+   app.use("/Service",proxy({
+        target:"http://m.mtime.cn",
         changeOrigin:true
-    }))*/
+    }))
 }
+//http://m.mtime.cn/Service/callback.mi/PageSubArea/GetFirstPageAdvAndNews.api?t=2018122319254845266
+
+//https://mce.mogucdn.com/jsonp/multiget/3?appPlat=m&pids=122224&callback=jsonp122224&_=1545556699866
+
+//https://webservice.juanpi.com/api/getGoods?page=2&zy_ids=p8_c4_l4_0&app_name=zhe&catname=tab_hpzc&flag=tab_hpzc
 //https://api-m.mtime.cn/PageSubArea/HotPlayMovies.api?locationId=290
 //https://api-m.mtime.cn/Movie/MovieCreditsWithTypes.api?movieId=217896
 //https://ticket-api-m.mtime.cn/movie/detail.api?locationId=290&movieId=125805

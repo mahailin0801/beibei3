@@ -1,0 +1,47 @@
+body{
+    background: #c0c0c0；
+}
+.con{
+    margin-top:50px; 
+}
+.in{
+    height: .8rem;
+    width: 100%;
+    margin-left: .256rem;
+    padding: .28rem 0 .26rem .65rem;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    font-size: .3rem
+}
+.tcode{
+    padding-left: 0 
+}
+.login-btn{
+    width: 7.02rem;
+    height: .88rem;
+    border-radius: .09rem;
+    margin-top: .37rem;
+    margin-left: .24rem;
+    line-height: .88rem;
+    font-size: .36rem;
+    text-align: center;
+    background-color: #FF4965;
+    color: #FFF;
+}
+.rem{
+    height: .36rem;
+    width:7.02rem;
+    margin: .24rem;
+    font-size: .32rem;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.loginicon1{
+    font-size: 0.6rem;
+    position: absolute;top: 0.6rem;left: 0.2rem;
+}
+.loginicon2{
+    font-size: 0.6rem;
+    position: absolute;top: 1.4rem;left: 0.2rem;
+}

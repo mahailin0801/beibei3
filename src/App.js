@@ -4,7 +4,8 @@ import Home from './components/home/home';
 import List from './components/list/list';
 import My from './components/my/my';
 import BuyCar from './components/car/buycar';
-import Order from './components/order/order';
+import Login from './components/login/login';
+import Reg from './components/reg/reg';
 import Navs from './components/navs/navList';
 import "./common/css/footer.css";
 import store from './store';
@@ -20,8 +21,9 @@ class App extends Component {
         				<Route path="/home" component={Home}/>
         				<Route path="/list"  component={List}/>
         				<Route path="/my"  component={My}/>
+        				<Route path="/reg"  component={Reg}/>
         				<Route path="/buycar"  component={BuyCar}/>
-        				<Route path="/order"  component={Order}/>
+        				<Route path="/login"  component={Login}/>
         				<Route path="/navs/navList" exact component={Navs}/>
         				<Route Redirect="/" to="/home"/>
         			</Switch>
@@ -53,7 +55,7 @@ class App extends Component {
         									</NavLink>
         							</li>
         							<li>
-        									<NavLink to="/order">
+        									<NavLink to="/login">
 		        									<i className="iconfont">&#xe601;</i>
 		        									<span>我的</span>
         									</NavLink>
